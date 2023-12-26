@@ -1,16 +1,16 @@
 package com.lambdatest.cucumber.steps;
 
 import com.lambdatest.cucumber.pages.TodoApp;
-
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+import io.cucumber.java.en.And;
 
 public class TodoAppSteps {
     TodoApp todo;
 
     @When("^I click on checkboxes$")
     public void search_google_for() throws Throwable {
+        System.out.println("Start");
         todo.open();
         todo.clickOn();
     }
